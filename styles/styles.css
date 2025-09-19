@@ -12,10 +12,6 @@ aside {
   text-align: center;
 }
 
-p {
-   padding: 0;
-  }
-
 aside img {
   width: 200px;
   height: auto;
@@ -29,6 +25,10 @@ aside img {
 main img {
   width: 150px;
   height: auto;
+}
+
+p {
+  padding: 0;
 }
 
 footer {
