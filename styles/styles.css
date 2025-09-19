@@ -1,20 +1,15 @@
 main {
-    max-width: 840px;
+  max-width: 840px;
 }
 
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+  border: 1px solid rgb(0 0 0 / 0.2); /* subtle transparent border */
   padding: 1rem;
   background-color: #eee;
   color: #333;
   text-align: center;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
 }
 
 aside img {
@@ -32,7 +27,7 @@ p {
 }
 
 footer {
-  margin-top: 15px;
+  margin-top: 1rem;  /* cleaner & consistent with rem units */
   border-top: 1px solid #000;
   text-align: center;
 }
