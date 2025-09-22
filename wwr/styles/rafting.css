@@ -8,7 +8,10 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
 }
-
+.bird {
+    height:100px ;
+    margin-right: 100px;
+}
 
 * {
     margin: 0;
@@ -37,6 +40,10 @@ nav, p, section, article {
     padding: 8px;
 }
 
+.boy {
+    text-align: left;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -51,20 +58,22 @@ nav a {
 
 .hero {
     position: relative;
+    
 }
 
 .hero h1,
 .hero article {
-    position: absolute;
+    /*position: absolute;
     top: 20%;
-    left: 10%;
+    left: 10%;*/
     color: white;
 }
 
-.hero article img {
-    float: right;
+/*.hero article img {
+    float: left;
     margin-left: 1rem;
-}
+    margin-top: 300px;
+}*/
 
 footer {
     text-align: center;
