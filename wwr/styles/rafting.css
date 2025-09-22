@@ -1,11 +1,14 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --heading-font: "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --primary-color: #004aad;
+    --secondary-color: #ffcc00;
+    --text-color: #333;
+    --background-color: #fff;
 }
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
 
 * {
     margin: 0;
@@ -50,41 +53,18 @@ nav a {
     position: relative;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: #fff;
-    font-size: 2em;
-}
-
+.hero h1,
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 12px;
-    max-width: 400px;
-    border-radius: 8px;
+    top: 20%;
+    left: 10%;
+    color: white;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 10px;
-    border-radius: 8px;
+    margin-left: 1rem;
 }
-
 
 footer {
     text-align: center;
@@ -97,7 +77,6 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
-    margin: 0 10px;
 }
 
 .socialmedia img {
