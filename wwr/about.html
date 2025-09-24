@@ -13,9 +13,12 @@
 
 <body>
 
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting logo" class="z-wwr-blue">
-        <nav>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="White Water Rafting logo" class="z-wwr-blue">
+        </div>
+        <nav class="site-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -25,32 +28,63 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <div class="hero">
+
+        <!-- Hero Section -->
+        <section class="hero">
             <img src="images/exciting_white_water_rafting_adventure.jpg" alt="Exciting White Water Rafting Adventure">
             <h1>White Water Rafting Adventures</h1>
-            <article>
-                <img src="images/happy_client.jpg" alt="Happy Client" class="bird">
-                <p>Our mission is to provide unforgettable white water rafting experiences while ensuring safety, fun,
-                    and environmental respect. Join us for thrilling adventures that create lasting memories!</p>
+            <article class="mission">
+                <img src="images/happy_client.jpg" alt="Happy Client" class="hero-img">
+                <p>
+                    Our mission is to provide unforgettable white water rafting experiences while ensuring safety, fun,
+                    and environmental respect. Join us for thrilling adventures that create lasting memories!
+                </p>
             </article>
-        </div>
+        </section>
 
-        <section>
-            <h2>History</h2>
-            <p class="boy">Founded in 2010, our company has been dedicated to bringing people closer to nature through
-                exciting
-                water adventures. Our guides are trained professionals who ensure each trip is safe, fun, and memorable.
+        <!-- History Section -->
+        <section class="history">
+            <h2>Our History</h2>
+            <p>
+                Founded in 2010, our company has been dedicated to bringing people closer to nature through exciting
+                water adventures. Our guides are trained professionals who ensure each trip is safe, fun, and
+                memorable.
             </p>
         </section>
 
-        <section>
+        <!-- Adventure Gallery Section -->
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <p>Get ready for action-packed river adventures. More details and images will be added soon!</p>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/big-mallard.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/half-day.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/white-wave.jpg" alt="White Wave Rapids">
+                    <figcaption>White Wave Rapids</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/river-escape.jpg" alt="River Escape">
+                    <figcaption>River Escape</figcaption>
+                </figure>
+            </div>
         </section>
+
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="site-footer">
         <p>&copy; 2025 White Water Rafting | Hellen Beatrice Apolot</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank">
@@ -64,7 +98,6 @@
             </a>
         </nav>
     </footer>
-
 
 </body>
 
