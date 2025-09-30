@@ -11,9 +11,10 @@ body {
     color: #333;
 }
 
+/* Header */
 .site-header {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 180px auto;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #0a3d62;
@@ -39,20 +40,34 @@ body {
 }
 
 .site-nav a:hover {
-    color: #f9ca24;
+    color: #ffd32a; /* brighter yellow for contrast */
 }
 
+/* Hero */
 .hero {
+    position: relative;
     text-align: center;
-    padding: 2rem;
-    background: url('../images/exciting_white_water_rafting_adventure.jpg') center/cover no-repeat;
+    padding: 4rem 2rem;
+   background: url('../images/rafting-hero.jpg') center/cover no-repeat;
     color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero .mission {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin: 1rem 0;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .hero .mission {
@@ -61,7 +76,7 @@ body {
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #333;
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -73,6 +88,7 @@ body {
     border-radius: 50%;
 }
 
+/* History */
 .history {
     padding: 2rem;
     max-width: 900px;
@@ -91,6 +107,7 @@ body {
     line-height: 1.6;
 }
 
+/* Adventures */
 .adventures {
     padding: 2rem;
     background-color: #dff9fb;
@@ -99,12 +116,17 @@ body {
 
 .adventures h2 {
     color: #0a3d62;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.adventures p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
 }
 
 .adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     justify-items: center;
 }
@@ -125,6 +147,7 @@ body {
     font-weight: bold;
 }
 
+/* Footer */
 .site-footer {
     display: flex;
     justify-content: space-between;
@@ -141,6 +164,7 @@ body {
 .socialmedia {
     display: flex;
     gap: 1rem;
+    margin-left: auto;
 }
 
 .socialmedia img {
@@ -153,12 +177,7 @@ body {
     transform: scale(1.2);
 }
 
-@media (max-width: 1024px) {
-    .adventure-gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
     .site-header {
         grid-template-columns: 1fr;
@@ -170,21 +189,6 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         gap: 1rem;
-    }
-
-    .adventure-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero .mission {
-        flex-direction: column;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .adventure-gallery {
-        grid-template-columns: 1fr;
     }
 
     .hero h1 {
