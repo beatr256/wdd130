@@ -80,23 +80,36 @@
 
                 <!-- Purpose -->
                 <p>Purpose of Message:</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label for="purpose-general">
+                    <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
+                </label>
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation
+                    Question
+                </label>
+                <label for="purpose-suggestion">
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
+                </label>
 
                 <!-- Message -->
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <!-- Newsletter -->
-                <label class="newsletter">
-                    <input type="checkbox" name="subscribe">
+                <label class="newsletter" for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
                 <!-- Submit Button -->
                 <button type="submit">Send Message</button>
             </form>
+        </section>
+
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+        </form>
         </section>
     </main>
 
