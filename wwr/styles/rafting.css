@@ -6,30 +6,31 @@
 }
 
 body {
-    line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Header */
 .site-header {
     display: grid;
     grid-template-columns: 180px auto;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #0a3d62;
+    color: #fff;
 }
 
-.site-header .logo img {
+.logo img {
     max-height: 60px;
     width: auto;
+    border-radius: 5px;
 }
 
 .site-nav ul {
+    list-style: none;
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-    list-style: none;
 }
 
 .site-nav a {
@@ -39,119 +40,152 @@ body {
     transition: color 0.3s ease;
 }
 
-.site-nav a:hover {
-    color: #ffd32a; /* brighter yellow for contrast */
+.site-nav a:hover,
+.site-nav a.active {
+    color: #ffd32a;
 }
 
-/* Hero */
-.hero {
-    position: relative;
+.contact-info {
     text-align: center;
-    padding: 4rem 2rem;
-   background: url('../images/rafting-hero.jpg') center/cover no-repeat;
-    color: #fff;
+    padding: 2rem;
+    background: #ffffff;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+.contact-info h1 {
+    font-size: 2.2rem;
+    color: #0a3d62;
+    margin-bottom: 1rem;
 }
 
-.hero h1, .hero .mission {
-    position: relative;
-    z-index: 2;
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin: 1rem 0;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+.contact-info strong {
+    color: #0a3d62;
 }
 
-.hero .mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
-    padding: 1rem 2rem;
+.map {
+    margin-top: 1.5rem;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: none;
     border-radius: 10px;
 }
 
-.hero .mission img.hero-img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* History */
-.history {
+.employees {
+    background-color: #dff9fb;
     padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
     text-align: center;
 }
 
-.history h2 {
+.employees h2 {
     font-size: 2rem;
     color: #0a3d62;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.history p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.employee-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-/* Adventures */
-.adventures {
-    padding: 2rem;
-    background-color: #dff9fb;
+.employee-gallery figure {
     text-align: center;
 }
 
-.adventures h2 {
-    color: #0a3d62;
-    margin-bottom: 1rem;
+.employee-gallery img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-.adventures p {
-    max-width: 700px;
-    margin: 0 auto 2rem;
+.employee-gallery img:hover {
+    transform: scale(1.05);
 }
 
-.adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-    justify-items: center;
-}
-
-.adventure-gallery figure {
-    text-align: center;
-}
-
-.adventure-gallery img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.adventure-gallery figcaption {
+.employee-gallery figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
+    color: #333;
 }
 
-/* Footer */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #0a3d62;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.contact-form button {
+    background-color: #0a3d62;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1e6091;
+    transform: scale(1.03);
+}
+
 .site-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 1rem 2rem;
     background-color: #0a3d62;
     color: #fff;
@@ -164,7 +198,6 @@ body {
 .socialmedia {
     display: flex;
     gap: 1rem;
-    margin-left: auto;
 }
 
 .socialmedia img {
@@ -177,7 +210,6 @@ body {
     transform: scale(1.2);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .site-header {
         grid-template-columns: 1fr;
@@ -191,7 +223,23 @@ body {
         gap: 1rem;
     }
 
-    .hero h1 {
+    .employee-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info h1 {
         font-size: 1.8rem;
+    }
+
+    .employees h2,
+    .contact-form h2 {
+        font-size: 1.6rem;
     }
 }
