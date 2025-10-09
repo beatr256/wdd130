@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hellen Beatrice Apolot | WDD 130</title>
     <meta name="description"
@@ -12,9 +12,10 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="active">Home</a>
             <a href="wwr/">Rafting Website</a>
             <a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a>
             <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -22,34 +23,43 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Hellen Beatrice Apolot | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Profile photo of Hellen Beatrice Apolot" class="profile-image">
-        <p>Hello! My name is Hellen Beatrice Apolot. I am from Jinja. I enjoy reading, learning about web design, and
-            exploring different cultures. I also like to visit temples around the world and learn their history and
-            architecture.</p>
+    <!-- Main Grid Layout -->
+    <main class="grid-container">
+        <!-- Profile Section -->
+        <section class="profile">
+            <h1>Hellen Beatrice Apolot | WDD 130</h1>
+            <img src="images/profile.jpg" alt="Profile photo of Hellen Beatrice Apolot" class="profile-image">
+            <p>Hello! My name is Hellen Beatrice Apolot. I am from Jinja. I enjoy reading, learning about web design,
+                and exploring different cultures. I also like to visit temples around the world and learn their history
+                and architecture.</p>
+        </section>
 
-        <!-- Favorite Temples List -->
-        <ul class="box">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
-                    target="_blank">Philadelphia Pennsylvania Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple" target="_blank">Paris
-                    France Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/berlin-germany-temple"
-                    target="_blank">Berlin Germany Temple</a></li>
-        </ul>
+        <!-- Favorite Temples -->
+        <section class="favorite-temples">
+            <h2>Favorite Temples</h2>
+            <ul>
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
+                        target="_blank">Philadelphia Pennsylvania Temple</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
+                        target="_blank">Paris France Temple</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/berlin-germany-temple"
+                        target="_blank">Berlin Germany Temple</a></li>
+            </ul>
+        </section>
+
+        <!-- Uganda Info -->
+        <aside class="uganda-info">
+            <h2>Uganda</h2>
+            <img src="images/uganda-nile-river.jpg" alt="Uganda Nile River">
+            <p>Uganda is in East Africa, landlocked; bordered by Kenya, South Sudan, the Democratic Republic of Congo,
+                Rwanda, and Tanzania. Known as the “Pearl of Africa,” Uganda has diverse landscapes, including Lake
+                Victoria, the River Nile, tropical forests, savannahs, and mountain ranges like the Rwenzori Mountains
+                (“Mountains of the Moon”).</p>
+        </aside>
     </main>
 
-    <aside class="box">
-        <h2>Uganda</h2>
-        <img src="images/uganda-nile-river.jpg" alt="Uganda Nile River">
-        <p>Uganda is in East Africa, landlocked; bordered by Kenya, South Sudan, the Democratic Republic of Congo,
-            Rwanda, and Tanzania. Known as the “Pearl of Africa,” Uganda has diverse landscapes, including Lake Victoria
-            (the world’s second-largest freshwater lake), the River Nile (the world’s longest river), tropical forests,
-            savannahs, and mountain ranges like the Rwenzori (“Mountains of the Moon”).</p>
-    </aside>
-
-    <footer>
+    <!-- Footer -->
+    <footer class="site-footer">
         <p>&copy; 2025 Hellen Beatrice Apolot | Uganda</p>
     </footer>
 </body>
