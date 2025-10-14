@@ -1,3 +1,4 @@
+/* Reset and global */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-header,
+/* Header and Navigation */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -19,13 +20,22 @@ header,
   background-color: #0a3d62;
   color: white;
   padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
-header h1 {
-  font-size: 1.8rem;
+.logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 0.3rem;
 }
 
-nav a,
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+}
+
 .site-nav a {
   color: white;
   text-decoration: none;
@@ -40,20 +50,16 @@ nav a:hover,
   color: #ffd32a;
 }
 
-.site-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
+/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
   color: white;
+  width: 100%;
 }
 
 .hero img {
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: block;
 }
@@ -69,6 +75,7 @@ nav a:hover,
   font-size: 1.8rem;
 }
 
+/* Newsletter */
 .newsletter {
   background: white;
   text-align: center;
@@ -112,6 +119,7 @@ nav a:hover,
   background-color: #1e6091;
 }
 
+/* Call to Action */
 .cta {
   text-align: center;
   background-color: #dff9fb;
@@ -133,6 +141,7 @@ nav a:hover,
   background-color: #005fa3;
 }
 
+/* Grid Section */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -159,6 +168,7 @@ nav a:hover,
   margin: 1rem 0 0.5rem;
 }
 
+/* Trips Page */
 .trips-intro {
   text-align: center;
   padding: 2rem 1rem;
@@ -224,15 +234,36 @@ nav a:hover,
   background-color: #1e6091;
 }
 
-footer,
+/* Trips Table */
+.trip-summary {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.trip-summary table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 800px;
+}
+
+.trip-summary th,
+.trip-summary td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+.trip-summary th {
+  background-color: #0a3d62;
+  color: white;
+}
+
+/* Footer */
 .site-footer {
   background-color: #0a3d62;
   color: white;
   text-align: center;
-  padding: 1rem;
-}
-
-.site-footer {
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -259,6 +290,7 @@ footer,
   transform: scale(1.2);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   header,
   .site-header {
@@ -274,5 +306,10 @@ footer,
   .about-grid,
   .trips-grid {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
